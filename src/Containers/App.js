@@ -13,7 +13,7 @@ class App extends Component {
         }
     }
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/users').then(response=>response.json())
+        fetch('https://gist.githubusercontent.com/kislay007/0d82aaf3205f31af90e9a666891aa0b4/raw/80c63bb4e122bae340be46288f02b86dd5a9229e/db.json').then(response=>response.json())
         .then(users => this.setState({robots : users}));
     }
 
